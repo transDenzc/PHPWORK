@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif; /* Use a common sans-serif font */
+    background-color: #f4f4f4; /* Light gray background for the page */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make body at least full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.signup-container {
+    background-color: #fff; /* White background for the form container */
+    padding: 30px; /* Add space inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 100%; /* Responsive width */
+    max-width: 200px; /* Maximum width for the form */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h3 {
+    display: flex; flex-direction: column;
+     font-size: 2.6rem; /* Center the "Signup" heading */
+    color: #333; /* Dark gray color for heading */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 25px; /* Space below the heading */
+}
+
+form {
+    display: flex; /* Use flexbox for form elements */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 12px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below each input field */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+    font-size: 1rem; /* Standard font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; /* Make inputs take full width of container */
+}
+
+button {
+    padding: 12px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Make button text bold */
+    transition: background-color 0.2s ease; /* Smooth background color transition on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
