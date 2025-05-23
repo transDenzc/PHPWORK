@@ -11,8 +11,14 @@
       
       $stmt = $pdo->prepare($query);
 
+     $options = [
+    'cost' => 12
+];
+
+$hashPwd=password_hash($pwd,PASSWORD_BCRYPT,$options);
+
       $stmt->bindParam(":username",$username);
-      $stmt->bindParam(":pwd",$pwd);
+      $stmt->bindParam(":pwd",$hashPwd);
       $stmt->bindParam(":email",$email);//将变量绑定到 SQL 占位符
       $stmt->execute();
 

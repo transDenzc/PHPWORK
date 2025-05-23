@@ -1,0 +1,94 @@
+/* 全局变量和基础样式 */
+:root {
+  --primary-color: #2563eb;    /* 主色调（蓝色） */
+  --error-color: #dc2626;      /* 错误提示红色 */
+  --success-color: #16a34a;    /* 成功提示绿色 */
+  --text-color: #2565cbe6;       /* 主要文字颜色 */
+  --bg-color: #f8fafc;         /* 页面背景色 */
+  --input-border: #cbd5e1;     /* 输入框边框色 */
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 2rem;
+}
+
+/* 容器布局 */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* 表单标题 */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* 表单组样式 */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* 输入框样式 */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--input-border);
+  border-radius: 0.375rem;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* 错误提示样式 */
+.form-error {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fee2e2;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 按钮样式 */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* 双表单布局 */
+.dual-form-container {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (min-width: 640px) {
+  .dual-form-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
